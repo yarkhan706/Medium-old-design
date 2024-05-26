@@ -30,6 +30,7 @@ header {
   position: fixed;
   top: 0;
   z-index: 100;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .left {
@@ -306,7 +307,13 @@ span {
     position: fixed;
     top: 0;
     z-index: 100;
+    transition: background-color 0.3s ease; /* Smooth transition */
   }
+
+ .sticky {
+    background-color: white;
+    border: 5px solid black; /* Background color when scrolled */
+}
   
   .left {
     display: flex;
